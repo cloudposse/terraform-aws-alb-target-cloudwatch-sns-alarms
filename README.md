@@ -132,6 +132,23 @@ module "alb_alarms" {
 |------|---------|
 | aws | >= 2.0 |
 
+## Modules
+
+| Name | Source | Version |
+|------|--------|---------|
+| httpcode_elb_5xx_alarm_label | cloudposse/label/null | 0.24.1 |
+| httpcode_target_3xx_alarm_label | cloudposse/label/null | 0.24.1 |
+| httpcode_target_4xx_alarm_label | cloudposse/label/null | 0.24.1 |
+| httpcode_target_5xx_alarm_label | cloudposse/label/null | 0.24.1 |
+| target_response_time_alarm_label | cloudposse/label/null | 0.24.1 |
+| this | cloudposse/label/null | 0.24.1 |
+
+## Resources
+
+| Name |
+|------|
+| [aws_cloudwatch_metric_alarm](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_metric_alarm) |
+
 ## Inputs
 
 | Name | Description | Type | Default | Required |
@@ -182,7 +199,6 @@ module "alb_alarms" {
 | httpcode\_target\_5xx\_count\_cloudwatch\_metric\_alarm\_id | Target Group 5xx count CloudWatch metric alarm ID |
 | target\_response\_time\_average\_cloudwatch\_metric\_alarm\_arn | Target Group response time average CloudWatch metric alarm ARN |
 | target\_response\_time\_average\_cloudwatch\_metric\_alarm\_id | Target Group response time average CloudWatch metric alarm ID |
-
 <!-- markdownlint-restore -->
 
 
